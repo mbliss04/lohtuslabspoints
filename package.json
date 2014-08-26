@@ -1,0 +1,10 @@
+{
+  "name": "tufts-incubator-points",
+  "version": "0.0.1",
+  "author": "lohtuslabs <lohtuslabs.tumblr.com>",
+  "description": "A web application that keeps track of teams and their points",
+  "dependencies": {
+    "express": "^4.7.2",
+    "jade": "^1.5.0"
+  }
+}
