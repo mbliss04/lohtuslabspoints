@@ -1,1 +1,1 @@
-node app.js
+main: node app.js
