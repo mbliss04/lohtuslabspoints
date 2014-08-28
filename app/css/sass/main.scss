@@ -1,0 +1,110 @@
+@import "compass/reset";
+@import "compass/css3";
+
+$ltgrey: #CECECE;
+$midgrey: #756F71;
+$drkgrey: #413D42;
+$pink: #F05252;
+$beige: #DBCDB8;
+
+body {
+    background: #efefef;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+#logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    z-index: 99;
+    @include scale(1);
+    @include transition(transform 0.3s ease-in-out);
+    &:hover {
+        @include scale(1.05);
+        cursor: pointer;
+    }
+}
+
+#teams {
+    height: auto;
+    width: 100%;
+    li {
+        position: relative;
+        display: block;
+        width: 50%;
+        float: left;
+        text-align: center;
+        a {
+            cursor: pointer;
+            padding-top: 28%;
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            @include transition(size 1s ease-in-out);
+            h1 {
+                text-transform: uppercase;
+                font-size: 2.3rem;
+            }
+            span {
+                font-size: 2rem;
+            }
+        }
+        .rank {
+            position: absolute;
+            top: 0;
+            text-align: center;
+            pointer-events: none;
+            z-index:1;
+            left: 0;
+            margin: 0 auto;
+            font-size: 18em;
+            @include opacity(.4);
+        }
+        &.rank1 {
+            background: $beige;
+            a:hover {
+                color: $beige;
+                background: #fff;
+            }
+        }
+        &.rank2 {
+            background: $midgrey;
+            a:hover {
+                color: $midgrey;
+                background: #fff;
+            }
+        }
+        &.rank3 {
+            background: $drkgrey;
+            a:hover {
+                color: $drkgrey;
+                background: #fff;
+            }
+        }
+        &.rank4 {
+            background: $pink;
+            a:hover {
+                color: $pink;
+                background: #fff;
+            }
+        }
+        &:hover {
+            .rank {
+                color: #ddd;
+            }
+        }
+    }
+}

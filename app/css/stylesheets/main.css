@@ -1,0 +1,196 @@
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/main.scss */
+body {
+  background: #efefef;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* line 17, ../sass/main.scss */
+a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 23, ../sass/main.scss */
+#logo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+  z-index: 99;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+/* line 34, ../sass/main.scss */
+#logo:hover {
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
+
+/* line 40, ../sass/main.scss */
+#teams {
+  height: auto;
+  width: 100%;
+}
+/* line 43, ../sass/main.scss */
+#teams li {
+  position: relative;
+  display: block;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+/* line 49, ../sass/main.scss */
+#teams li a {
+  cursor: pointer;
+  padding-top: 28%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -moz-transition: size 1s ease-in-out;
+  -o-transition: size 1s ease-in-out;
+  -webkit-transition: size 1s ease-in-out;
+  transition: size 1s ease-in-out;
+}
+/* line 57, ../sass/main.scss */
+#teams li a h1 {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+/* line 61, ../sass/main.scss */
+#teams li a span {
+  font-size: 2rem;
+}
+/* line 65, ../sass/main.scss */
+#teams li .rank {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  left: 0;
+  margin: 0 auto;
+  font-size: 18em;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+/* line 76, ../sass/main.scss */
+#teams li.rank1 {
+  background: #DBCDB8;
+}
+/* line 78, ../sass/main.scss */
+#teams li.rank1 a:hover {
+  color: #DBCDB8;
+  background: #fff;
+}
+/* line 83, ../sass/main.scss */
+#teams li.rank2 {
+  background: #756F71;
+}
+/* line 85, ../sass/main.scss */
+#teams li.rank2 a:hover {
+  color: #756F71;
+  background: #fff;
+}
+/* line 90, ../sass/main.scss */
+#teams li.rank3 {
+  background: #413D42;
+}
+/* line 92, ../sass/main.scss */
+#teams li.rank3 a:hover {
+  color: #413D42;
+  background: #fff;
+}
+/* line 97, ../sass/main.scss */
+#teams li.rank4 {
+  background: #F05252;
+}
+/* line 99, ../sass/main.scss */
+#teams li.rank4 a:hover {
+  color: #F05252;
+  background: #fff;
+}
+/* line 105, ../sass/main.scss */
+#teams li:hover .rank {
+  color: #ddd;
+}
