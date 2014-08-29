@@ -4,7 +4,6 @@ define(['models/TeamModel'], function(TeamModel){
     tagName: 'li',
     template: _.template( $("#teamTemplate").html()),
     initialize: function () {
-        console.log('creating team view');
         this.model.on("change", this.render);
     },
     render: function () {

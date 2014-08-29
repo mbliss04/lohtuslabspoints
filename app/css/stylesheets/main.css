@@ -118,8 +118,9 @@ a {
   width: 50%;
   float: left;
   text-align: center;
+  overflow: hidden;
 }
-/* line 49, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 #teams li a {
   cursor: pointer;
   padding-top: 28%;
@@ -132,65 +133,63 @@ a {
   -webkit-transition: size 1s ease-in-out;
   transition: size 1s ease-in-out;
 }
-/* line 57, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 #teams li a h1 {
   text-transform: uppercase;
   font-size: 2.3rem;
 }
-/* line 61, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 #teams li a span {
   font-size: 2rem;
 }
 /* line 65, ../sass/main.scss */
-#teams li .rank {
+#teams li a .rank {
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
   text-align: center;
   pointer-events: none;
-  z-index: 1;
-  left: 0;
-  margin: 0 auto;
   font-size: 18em;
+  z-index: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 76, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 #teams li.rank1 {
   background: #DBCDB8;
 }
-/* line 78, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 #teams li.rank1 a:hover {
   color: #DBCDB8;
   background: #fff;
 }
-/* line 83, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 #teams li.rank2 {
   background: #756F71;
 }
-/* line 85, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 #teams li.rank2 a:hover {
   color: #756F71;
   background: #fff;
 }
-/* line 90, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 #teams li.rank3 {
   background: #413D42;
 }
-/* line 92, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 #teams li.rank3 a:hover {
   color: #413D42;
   background: #fff;
 }
-/* line 97, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 #teams li.rank4 {
   background: #F05252;
 }
-/* line 99, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 #teams li.rank4 a:hover {
   color: #F05252;
   background: #fff;
-}
-/* line 105, ../sass/main.scss */
-#teams li:hover .rank {
-  color: #ddd;
 }

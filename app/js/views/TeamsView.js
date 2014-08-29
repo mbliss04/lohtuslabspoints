@@ -16,7 +16,8 @@ define(['collections/TeamCollection', 'views/TeamView'], function(TeamCollection
     addOne: function(team){
         console.log('Adding ' + team.get('name'));
         var index = (this.collection.indexOf(team) + 1);
-        var teamView = new TeamView({model:team, className:"rank"+(team.get('rank')+index).toString()});
+        team.set({rank: index});
+        var teamView = new TeamView({model: team, className:"rank"+(team.get('rank').toString())});
         this.$el.append(teamView.render().el);
     }
 

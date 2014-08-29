@@ -17,8 +17,10 @@ html(lang="en")
         $('#teams li').css({height:($(window).height()/2)});
       });
     script(type='text/template', id='teamTemplate').
-      <a href="#" alt="<%= name %>"><h1><%= name %></h1>
-      <span><%= points %> pts</span></a>
+      <a href="#" alt="<%= name %>">
+      <h1><%= name %></h1>
+      <span><%= points %> pts</span>
       <div class="rank"><%= rank %></div>
+      </a>
     script(type='text/template', id='teamsTemplate').
       <% teams %>

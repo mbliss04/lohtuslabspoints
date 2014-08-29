@@ -46,6 +46,7 @@ a {
         width: 50%;
         float: left;
         text-align: center;
+        overflow: hidden;
         a {
             cursor: pointer;
             padding-top: 28%;
@@ -61,17 +62,19 @@ a {
             span {
                 font-size: 2rem;
             }
-        }
-        .rank {
-            position: absolute;
-            top: 0;
-            text-align: center;
-            pointer-events: none;
-            z-index:1;
-            left: 0;
-            margin: 0 auto;
-            font-size: 18em;
-            @include opacity(.4);
+            .rank {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                text-align: center;
+                pointer-events: none;
+                font-size: 18em;
+                z-index:1;
+                @include opacity(.4);
+            }
         }
         &.rank1 {
             background: $beige;
@@ -99,11 +102,6 @@ a {
             a:hover {
                 color: $pink;
                 background: #fff;
-            }
-        }
-        &:hover {
-            .rank {
-                color: #ddd;
             }
         }
     }
