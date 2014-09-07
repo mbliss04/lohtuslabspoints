@@ -14,7 +14,7 @@ define(['models/TeamModel'], function(TeamModel){
         return this;
     }, 
     events: {
-        "click js-expand": function() {
+        "click": function() {
             console.log(this.model);
         }
     }

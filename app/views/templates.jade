@@ -3,11 +3,9 @@ script(type='text/javascript').
     $('#teams li').css({height:($(window).height()/2)});
   });
 script(type='text/template', id='teamTemplate').
-  <a href="#" class="js-expand expand-<%= name.replace(" ", "-") %>">
-      <h1><%= name %></h1>
-      <span><%= points %> pts</span>
-      <div class="rank"><%= rank %></div>
-  </a>
+  <h1><%= name %></h1>
+  <span><%= points %> pts</span>
+  <div class="rank"><%= rank %></div>
 script(type='text/template', id='fullTeamTemplate').
   <div class="js-show-teams">Show All Teams</div>
   <h1><%= name %></h1>
