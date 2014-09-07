@@ -20,6 +20,10 @@ a {
     color: #fff;
 }
 
+.hidden {
+    @include opacity(0);
+}
+
 #logo {
     position: absolute;
     width: 150px;
@@ -40,6 +44,7 @@ a {
 #teams {
     height: auto;
     width: 100%;
+    @include opacity(0);
     li {
         position: relative;
         display: block;

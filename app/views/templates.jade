@@ -1,0 +1,24 @@
+script(type='text/javascript').
+  $(window).resize(function(){
+    $('#teams li').css({height:($(window).height()/2)});
+  });
+script(type='text/template', id='teamTemplate').
+  <a href="#" class="js-expand expand-<%= name.replace(" ", "-") %>">
+      <h1><%= name %></h1>
+      <span><%= points %> pts</span>
+      <div class="rank"><%= rank %></div>
+  </a>
+script(type='text/template', id='fullTeamTemplate').
+  <div class="js-show-teams">Show All Teams</div>
+  <h1><%= name %></h1>
+  <ul class="ranking">
+      <li>Points: <%= points %></li>
+      <li>Rank: <%= rank %></li>
+  </ul>
+  <ul class="members">
+      <% for(var member in members) { %>  
+          <li><%= members[member] %></li> 
+      <% } %>
+  </ul>
+  <div class="about"><%= description %></div>
+  <iframe src="<%= videoUrl %>"></iframe>

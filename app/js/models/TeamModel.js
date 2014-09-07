@@ -6,12 +6,9 @@ define([], function() {
         rank: 0,
         members: {}, 
         videoUrl: "", 
-        description: "",
-        teamUrl: "/team/"
+        description: ""
     }, 
-    initialize: function() {
-
-    }
+    url: "/team"
   });
   return TeamModel;
 });

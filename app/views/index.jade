@@ -12,15 +12,4 @@ html(lang="en")
     script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js')
     script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js')
     script(type='text/javascript', data-main="js/app", src="js/libs/require/require.js")
-    script(type='text/javascript').
-      $(window).resize(function(){
-        $('#teams li').css({height:($(window).height()/2)});
-      });
-    script(type='text/template', id='teamTemplate').
-      <a href="#" alt="<%= name %>">
-      <h1><%= name %></h1>
-      <span><%= points %> pts</span>
-      <div class="rank"><%= rank %></div>
-      </a>
-    script(type='text/template', id='teamsTemplate').
-      <% teams %>
+    include templates

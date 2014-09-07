@@ -79,6 +79,12 @@ a {
 }
 
 /* line 23, ../sass/main.scss */
+.hidden {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 27, ../sass/main.scss */
 #logo {
   position: absolute;
   width: 150px;
@@ -97,7 +103,7 @@ a {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
-/* line 34, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 #logo:hover {
   -moz-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
@@ -106,12 +112,14 @@ a {
   cursor: pointer;
 }
 
-/* line 40, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 #teams {
   height: auto;
   width: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
-/* line 43, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 #teams li {
   position: relative;
   display: block;
@@ -120,7 +128,7 @@ a {
   text-align: center;
   overflow: hidden;
 }
-/* line 50, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 #teams li a {
   cursor: pointer;
   padding-top: 28%;
@@ -133,16 +141,16 @@ a {
   -webkit-transition: size 1s ease-in-out;
   transition: size 1s ease-in-out;
 }
-/* line 58, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 #teams li a h1 {
   text-transform: uppercase;
   font-size: 2.3rem;
 }
-/* line 62, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 #teams li a span {
   font-size: 2rem;
 }
-/* line 65, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 #teams li a .rank {
   position: absolute;
   top: 0;
@@ -157,38 +165,38 @@ a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 79, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 #teams li.rank1 {
   background: #DBCDB8;
 }
-/* line 81, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 #teams li.rank1 a:hover {
   color: #DBCDB8;
   background: #fff;
 }
-/* line 86, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 #teams li.rank2 {
   background: #756F71;
 }
-/* line 88, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 #teams li.rank2 a:hover {
   color: #756F71;
   background: #fff;
 }
-/* line 93, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 #teams li.rank3 {
   background: #413D42;
 }
-/* line 95, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 #teams li.rank3 a:hover {
   color: #413D42;
   background: #fff;
 }
-/* line 100, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 #teams li.rank4 {
   background: #F05252;
 }
-/* line 102, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 #teams li.rank4 a:hover {
   color: #F05252;
   background: #fff;
