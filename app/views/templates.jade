@@ -3,20 +3,18 @@ script(type='text/javascript').
     $('#teams li').css({height:($(window).height()/2)});
   });
 script(type='text/template', id='teamTemplate').
+  <div class="fullview js-hide-team"><img src="images/back.png">Show all teams</div>
+  <div class="js-show-team"></div>
   <h1><%= name %></h1>
+  <div class="fullview about"><%= description %></div>
   <span><%= points %> pts</span>
   <div class="rank"><%= rank %></div>
-script(type='text/template', id='fullTeamTemplate').
-  <div class="js-show-teams">Show All Teams</div>
-  <h1><%= name %></h1>
-  <ul class="ranking">
-      <li>Points: <%= points %></li>
-      <li>Rank: <%= rank %></li>
-  </ul>
-  <ul class="members">
+  <div class="fullview members">
+  <label>Team Members:</label>
+  <ul>
       <% for(var member in members) { %>  
           <li><%= members[member] %></li> 
       <% } %>
   </ul>
-  <div class="about"><%= description %></div>
   <iframe src="<%= videoUrl %>"></iframe>
+  </div>

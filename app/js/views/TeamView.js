@@ -4,7 +4,6 @@ define(['models/TeamModel'], function(TeamModel){
     tagName: 'li',
     model: new TeamModel(),
     template: _.template($("#teamTemplate").html()),
-    fullTemplate: _.template($("#fullTeamTemplate").html()),
     initialize: function () {
         this.model.on('change', this.render());
     },
@@ -14,8 +13,17 @@ define(['models/TeamModel'], function(TeamModel){
         return this;
     }, 
     events: {
-        "click": function() {
-            console.log(this.model);
+        "click .js-show-team": function() {
+            this.$el.addClass('selected').animate({
+                height:($(window).height()),
+                width: '100%'
+            }, 300);
+        }, 
+        "click .js-hide-team": function() {
+            this.$el.removeClass('selected').animate({
+                height:($(window).height()/2),
+                width: '50%'
+            }, 300);
         }
     }
   });

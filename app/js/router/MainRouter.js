@@ -1,9 +1,8 @@
-define(['views/FullTeamView', 'views/TeamsView'], function (FullTeamView, TeamsView) {
+define(['views/TeamView', 'views/TeamsView'], function (FullTeamView, TeamsView) {
   
   var MainRouter = Backbone.Router.extend({
     routes: {
-      "" : "showTeams",
-      "team/:name" : "showTeam"
+      "" : "showTeams"
     }
   });
 
@@ -16,16 +15,6 @@ define(['views/FullTeamView', 'views/TeamsView'], function (FullTeamView, TeamsV
         $('#logo').show();
         var teamsView = new TeamsView();
         teamsView.render();
-        
-    });
-
-    router.on('route:showTeam', function (team) {
-
-        $('#logo').hide();
-        var teamView = new FullTeamView();
-        $('body').prepend(teamView.render().el);
-
-        console.log("show single team");
         
     });
 
