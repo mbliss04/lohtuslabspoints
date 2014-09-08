@@ -1,6 +1,13 @@
 script(type='text/javascript').
   $(window).resize(function(){
-    $('#teams li').css({height:($(window).height()/2)});
+    var height = ($(window).height()/2);
+    $('#teams li').each(function(index){
+        var team = $(this);
+        if (team.hasClass('selected')) {
+            height = $(window).height()
+        }
+        team.css({height:height});
+    });
   });
 script(type='text/template', id='teamTemplate').
   <div class="fullview js-hide-team"><img src="images/back.png">Show all teams</div>
