@@ -19,11 +19,20 @@ app.get('/teams', function(req, res){
             res.json(results);
             db.close();
         });
-    })
+    });
 });
 
 app.get('/', function(req, res){
     res.render('index');
+});
+
+app.put('/updatescore', function(req, res){
+    console.log(req.body);
+    // MongoClient.connect(MONGOLAB_URI, function(err, db) {
+    //     if(err) throw err;
+    //     var collection = db.collection('teams');
+    //     collection.update(req.body.team)
+    // });
 });
 
 var port = Number(process.env.PORT || 5000);

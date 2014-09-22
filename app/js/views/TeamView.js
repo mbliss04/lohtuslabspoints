@@ -8,7 +8,6 @@ define(['models/TeamModel'], function(TeamModel){
         this.model.on('change', this.render());
     },
     render: function () {
-        console.log('render')
         this.$el.html(this.template(this.model.toJSON()));
         this.$el.css({height:($(window).height()/2)});
         return this;

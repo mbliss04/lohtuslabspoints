@@ -1,0 +1,46 @@
+@import "vars";
+
+h1 {
+    margin: 50px 0 20px 0;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #888;
+    text-align: center;
+}
+
+form {
+    width: 60%;
+    display: block;
+    background: #fff;
+    color: #888;
+    margin: auto;
+    padding: 20px;
+    border-radius: 3px;
+    div {
+        width: 100%;
+        line-height: 2em;
+        margin: 0 auto;
+        input {
+            border-radius: 3px;
+            font-size: 1.1em;
+            width: 99%;
+            line-height: 2em;
+            height: 25px;
+            margin: 10px 0;
+            text-indent: 10px;
+        }
+    }
+    input[type="submit"] {
+        width: 100%;
+        line-height: 1.1em;
+        height: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        border: none;
+        @include linear-gradient($pink, #ec6e6e);
+        &:hover {
+            cursor: pointer;
+            @include linear-gradient(#ec6e6e, $pink);
+        }
+    }
+}

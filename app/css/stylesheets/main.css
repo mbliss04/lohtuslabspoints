@@ -63,28 +63,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 10, ../sass/main.scss */
-body {
-  background: #efefef;
-  font-family: 'Raleway', sans-serif;
-  color: #fff;
-  overflow: hidden;
-}
-
-/* line 17, ../sass/main.scss */
-a {
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  color: #fff;
-}
-
-/* line 23, ../sass/main.scss */
+/* line 3, ../sass/_teams.scss */
 .hidden {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 7, ../sass/_teams.scss */
 #logo {
   position: absolute;
   width: 150px;
@@ -103,7 +88,7 @@ a {
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
-/* line 38, ../sass/main.scss */
+/* line 18, ../sass/_teams.scss */
 #logo:hover {
   -moz-transform: scale(1.05, 1.05);
   -ms-transform: scale(1.05, 1.05);
@@ -112,7 +97,7 @@ a {
   cursor: pointer;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 24, ../sass/_teams.scss */
 #teams {
   height: auto;
   width: 100%;
@@ -121,7 +106,7 @@ a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 50, ../sass/main.scss */
+/* line 30, ../sass/_teams.scss */
 #teams li {
   z-index: 10;
   position: relative;
@@ -135,7 +120,7 @@ a {
   -webkit-transition: size 1s ease-in-out;
   transition: size 1s ease-in-out;
 }
-/* line 59, ../sass/main.scss */
+/* line 39, ../sass/_teams.scss */
 #teams li .js-show-team {
   position: absolute;
   width: 100%;
@@ -143,17 +128,17 @@ a {
   display: block;
   cursor: pointer;
 }
-/* line 66, ../sass/main.scss */
+/* line 46, ../sass/_teams.scss */
 #teams li h1 {
   margin-top: 28%;
   text-transform: uppercase;
   font-size: 2.3rem;
 }
-/* line 71, ../sass/main.scss */
+/* line 51, ../sass/_teams.scss */
 #teams li span {
   font-size: 2rem;
 }
-/* line 74, ../sass/main.scss */
+/* line 54, ../sass/_teams.scss */
 #teams li .rank {
   position: absolute;
   top: 0;
@@ -168,47 +153,47 @@ a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 87, ../sass/main.scss */
+/* line 67, ../sass/_teams.scss */
 #teams li .fullview {
   display: none;
 }
-/* line 90, ../sass/main.scss */
+/* line 70, ../sass/_teams.scss */
 #teams li.rank1 {
   background: #F05252;
 }
-/* line 92, ../sass/main.scss */
+/* line 72, ../sass/_teams.scss */
 #teams li.rank1:hover {
   color: #F05252;
   background: #fff;
 }
-/* line 97, ../sass/main.scss */
+/* line 77, ../sass/_teams.scss */
 #teams li.rank2 {
   background: #756F71;
 }
-/* line 99, ../sass/main.scss */
+/* line 79, ../sass/_teams.scss */
 #teams li.rank2:hover {
   color: #756F71;
   background: #fff;
 }
-/* line 104, ../sass/main.scss */
+/* line 84, ../sass/_teams.scss */
 #teams li.rank3 {
   background: #413D42;
 }
-/* line 106, ../sass/main.scss */
+/* line 86, ../sass/_teams.scss */
 #teams li.rank3:hover {
   color: #413D42;
   background: #fff;
 }
-/* line 111, ../sass/main.scss */
+/* line 91, ../sass/_teams.scss */
 #teams li.rank4 {
   background: #DBCDB8;
 }
-/* line 113, ../sass/main.scss */
+/* line 93, ../sass/_teams.scss */
 #teams li.rank4:hover {
   color: #DBCDB8;
   background: #fff;
 }
-/* line 118, ../sass/main.scss */
+/* line 98, ../sass/_teams.scss */
 #teams li.selected {
   z-index: 3000;
   position: absolute;
@@ -217,46 +202,61 @@ a {
   top: 0;
   left: 0;
 }
-/* line 125, ../sass/main.scss */
+/* line 105, ../sass/_teams.scss */
 #teams li.selected .js-show-team {
   width: 0;
   height: 0;
 }
-/* line 129, ../sass/main.scss */
+/* line 109, ../sass/_teams.scss */
 #teams li.selected .js-hide-team {
   position: absolute;
   top: 20px;
   left: 20px;
   cursor: pointer;
 }
-/* line 134, ../sass/main.scss */
+/* line 114, ../sass/_teams.scss */
 #teams li.selected .js-hide-team img {
   top: 10px;
   position: relative;
 }
-/* line 138, ../sass/main.scss */
+/* line 118, ../sass/_teams.scss */
 #teams li.selected .js-hide-team:hover {
   color: #bfbfbf;
 }
-/* line 142, ../sass/main.scss */
+/* line 122, ../sass/_teams.scss */
 #teams li.selected h1 {
   margin-top: 270px;
 }
-/* line 145, ../sass/main.scss */
+/* line 125, ../sass/_teams.scss */
 #teams li.selected span {
   position: relative;
   top: -110px;
 }
-/* line 149, ../sass/main.scss */
+/* line 129, ../sass/_teams.scss */
 #teams li.selected .members {
   display: block;
   margin-top: 10px;
 }
-/* line 152, ../sass/main.scss */
+/* line 132, ../sass/_teams.scss */
 #teams li.selected .members label {
   font-size: 1.3em;
 }
-/* line 156, ../sass/main.scss */
+/* line 136, ../sass/_teams.scss */
 #teams li.selected .fullview {
   display: block;
+}
+
+/* line 5, ../sass/main.scss */
+body {
+  background: #efefef;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* line 12, ../sass/main.scss */
+a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #fff;
 }

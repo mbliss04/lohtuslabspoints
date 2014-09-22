@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    title= "Update points"
+    link(href='http://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/stylesheets/mainupdate.css')
+    link(rel='icon', href='images/favicon.ico')
+  body
+    h1 Update Points
+    form#addPoints
+        div
+            label(for='teamName') Team Name:
+            input#teamName
+        div
+            label(for='teamName') Points To Add:
+            input#points
+        div
+            input(type='submit', id="submitButton" value='Update')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js')
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js')
+    script(type='text/javascript', data-main="js/app", src="js/libs/require/require.js")
+    include templates

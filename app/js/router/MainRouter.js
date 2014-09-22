@@ -1,8 +1,9 @@
-define(['views/TeamView', 'views/TeamsView'], function (FullTeamView, TeamsView) {
+define(['views/TeamsView', 'views/UpdateView'], function (TeamsView, UpdateView) {
   
   var MainRouter = Backbone.Router.extend({
     routes: {
-      "" : "showTeams"
+      "" : "showTeams",
+      "update" : "updatePoints"
     }
   });
 
@@ -16,6 +17,14 @@ define(['views/TeamView', 'views/TeamsView'], function (FullTeamView, TeamsView)
         var teamsView = new TeamsView();
         teamsView.render();
         
+    });
+
+    router.on('route:updatePoints', function() {
+
+        $('#logo').hide();
+        var updater = new UpdateView();
+        $('html').append(updater.render().el);
+
     });
 
     Backbone.history.start();

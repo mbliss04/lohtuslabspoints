@@ -3,7 +3,7 @@ define(['models/TeamModel'], function(TeamModel){
       model: TeamModel,
       url: '/teams',
       comparator: function(model) {
-        return parseInt(model.get('points'));
+        return parseInt(-model.get('points'));
       }
   });
 
