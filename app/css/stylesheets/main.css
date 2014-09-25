@@ -130,7 +130,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 46, ../sass/_teams.scss */
 #teams li h1 {
-  margin-top: 28%;
+  margin-top: 140px;
   text-transform: uppercase;
   font-size: 2.3rem;
 }
@@ -230,18 +230,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 125, ../sass/_teams.scss */
 #teams li.selected span {
   position: relative;
-  top: -110px;
+  top: -100px;
 }
 /* line 129, ../sass/_teams.scss */
+#teams li.selected .about {
+  color: #888;
+  padding: 0 10%;
+  width: 80%;
+  max-height: 150px;
+  overflow: scroll;
+  background: #efefef;
+}
+/* line 137, ../sass/_teams.scss */
 #teams li.selected .members {
   display: block;
   margin-top: 10px;
 }
-/* line 132, ../sass/_teams.scss */
+/* line 140, ../sass/_teams.scss */
 #teams li.selected .members label {
   font-size: 1.3em;
 }
-/* line 136, ../sass/_teams.scss */
+/* line 144, ../sass/_teams.scss */
 #teams li.selected .fullview {
   display: block;
 }

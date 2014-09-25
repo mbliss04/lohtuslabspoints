@@ -9,10 +9,18 @@ define([], function(){
         return this;
     }, 
     events: {
-        "click #submitButton": "updatePoints"
+        "submit": "updatePoints"
     }, 
     updatePoints: function() {
-
+        $.ajax ({
+            url: 'updatescore',
+            data: $('#addPoints').serialize(),
+            type: "PUT",
+            success: function(response) {
+                console.log(response)
+            }
+        });
+        return false;
     }
   });
 

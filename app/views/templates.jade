@@ -13,8 +13,11 @@ script(type='text/template', id='teamTemplate').
   <div class="fullview js-hide-team"><img src="images/back.png">Show all teams</div>
   <div class="js-show-team"></div>
   <h1><%= name %></h1>
-  <div class="fullview about"><%= description %></div>
   <span><%= points %> pts</span>
+  <div class="fullview">
+      <h2>Description</h2>
+      <div class="about"><%= description %></div>
+  </div>
   <div class="rank"><%= rank %></div>
   <div class="fullview members">
   <label>Team Members:</label>
@@ -28,6 +31,6 @@ script(type='text/template', id='teamTemplate').
 script(type='text/template', id='updateTemplate').
   <h1>Update Points</h1>
   <form id="addPoints">
-  <div><input id="team" placeholder="Team Name"></div>
-  <div><input id="points" placeholder="Points to Add:"></div>
-  <div><input type='submit' id="submitButton" value='Update'></div>
+  <input id="team" name="team" placeholder="Team Name">
+  <input id="points" name="points" placeholder="Points to Add:">
+  <input type='submit' id="submitButton" name="submit" value='Update'>

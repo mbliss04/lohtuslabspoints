@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var util = require('util');
 
 var MongoClient = require('mongodb').MongoClient;
 var format = require('util').format;
@@ -27,7 +28,7 @@ app.get('/', function(req, res){
 });
 
 app.put('/updatescore', function(req, res){
-    console.log(req.body);
+    console.log('hello ' + util.inspect(req))
     // MongoClient.connect(MONGOLAB_URI, function(err, db) {
     //     if(err) throw err;
     //     var collection = db.collection('teams');
